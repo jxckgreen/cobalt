@@ -24,3 +24,5 @@ USER node
 
 EXPOSE 9000
 CMD [ "node", "src/cobalt" ]
+COPY cookies.json /app/cookies.json
+ENV COOKIE_PATH=/app/cookies.json
